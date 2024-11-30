@@ -78,8 +78,8 @@ POSTGRES_SCRIPT
 # Save database credentials securely
 echo "DATABASE_URL=postgresql://$DB_USER:$DB_PASS@localhost/$DB_NAME" > .env
 
-# Clone Event Platform Repository
-git clone https://github.com/yourusername/event-platform.git src
+# Clone Your Event Platform Repository
+git clone https://github.com/DimitriGeelen/KH-Event-app.git src
 
 # Nginx Configuration
 cat > /etc/nginx/sites-available/event_platform <<NGINX_CONF
@@ -118,9 +118,6 @@ SUPERVISOR_CONF
 ufw allow OpenSSH
 ufw allow 'Nginx Full'
 ufw enable
-
-# SSL Configuration (Optional - requires domain)
-# certbot --nginx -d event.yourdomain.com
 
 # Final Setup
 chown -R www-data:www-data "$PROJECT_DIR"
