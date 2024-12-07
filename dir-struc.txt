@@ -1,0 +1,43 @@
+# Directory structure:
+"""
+eventmanager/
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── event.py
+│   │   ├── tag.py
+│   │   └── user.py
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   ├── events.js
+│   │   │   ├── location.js
+│   │   │   └── map.js
+│   │   └── uploads/
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── events/
+│   │   │   ├── create.html
+│   │   │   ├── edit.html
+│   │   │   ├── list.html
+│   │   │   └── view.html
+│   │   ├── admin/
+│   │   │   └── tags.html
+│   │   └── components/
+│   │       ├── map.html
+│   │       └── location_picker.html
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── events.py
+│   │   └── api.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── file_handler.py
+│       └── geocoding.py
+├── requirements.txt
+└── run.py
+"""
